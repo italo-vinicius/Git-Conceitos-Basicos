@@ -53,8 +53,21 @@ mixed: similar ao soft, porem antes das adições de arquivos (``git add``)
 hard: vai ignorar todo o commit e adição anterior. tudo irá sumir do mapa
 
 ***
+## Branchs
 
 Com o comando ``git branch`` podemos nos situar em qual branch estamos
 
+Para criar uma nova branch tambem é bem simples. Basta usar o comando ``git branch 'name_new_branch'``
+
+Para trocar de branch, vamos usar ``git checkout 'branchName``. o nome da branch é aquela que queremos ir 
+
+Para vermos o que foi mudado nos arquivos, podemos usar o comando ``git diff``
 *** 
 
+## Conectando ao repositório do GitHub
+
+Quando já tivermos nosso trabalho pronto, podemos mandá-lo para nosso repositório remoto no gitHub. Para fazer isso é bem simples, vamos usar o seguinte comando:
+
+```
+
+```
