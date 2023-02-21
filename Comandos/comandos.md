@@ -62,6 +62,11 @@ Para criar uma nova branch tambem é bem simples. Basta usar o comando ``git bra
 Para trocar de branch, vamos usar ``git checkout 'branchName``. o nome da branch é aquela que queremos ir 
 
 Para vermos o que foi mudado nos arquivos, podemos usar o comando ``git diff``
+
+Caso queira mudar o nome da branch, basta usar o comando:
+```
+git branch -m nome_antigo nome_novo
+```
 *** 
 
 ## Conectando ao repositório do GitHub
@@ -69,5 +74,12 @@ Para vermos o que foi mudado nos arquivos, podemos usar o comando ``git diff``
 Quando já tivermos nosso trabalho pronto, podemos mandá-lo para nosso repositório remoto no gitHub. Para fazer isso é bem simples, vamos usar o seguinte comando:
 
 ```
-
+git remote add origin https://github.com/italo-vinicius/Git-Conceitos-Basicos //conecta ao repositório remoto
+git push -u origin main //envia os arquivos para o repositório
 ```
+
+***
+
+## Git Ignore
+
+Caso você não queira que algum dado sensivel vá para o repositório remoto, você pode usar o arquivo .gitignore . Nesse arquivo, podemos colocar arquivos que serão ignorados ao darmos o commit
