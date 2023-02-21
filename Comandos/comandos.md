@@ -36,6 +36,25 @@ git commit -m 'explique seu commit'  //Note que devemos deixar a informação so
 
 Para ver a lista de todos os commits feitos na branch, usamos o comando ``git log``
 
+Caso queira adicionar e fazer o commit de uma só vez, podemos usar o comando ``git commit -ad 'comments'``
+
+***
+## Voltando atrás na história
+
+Caso você queira voltar para a versão anterior do código, ou por acaso seu código que foi commitado gerou algum erro, você pode voltar atrás com o comando ``git reset``. Esse comando pode ser usado de 3 formas, dependendo da sua necessidade.
+```
+git reset --soft 'hash do commit'
+git reset --mixed 'hash do commit'
+git reset --hard 'hash do commit'
+```
+
+soft: volta para o estado anterior, porem com as modificações não commitadas
+mixed: similar ao soft, porem antes das adições de arquivos (``git add``)
+hard: vai ignorar todo o commit e adição anterior. tudo irá sumir do mapa
+
 ***
 
 Com o comando ``git branch`` podemos nos situar em qual branch estamos
+
+*** 
+
