@@ -34,3 +34,8 @@ git commit -m 'explique seu commit'  //Note que devemos deixar a informação so
 
  Com o comando ``git status`` vamos ver a situação atual do nosso projeto. esse comando trará informações uteis, como arquivos que já foram ou não commitados
 
+Para ver a lista de todos os commits feitos na branch, usamos o comando ``git log``
+
+***
+
+Com o comando ``git branch`` podemos nos situar em qual branch estamos
