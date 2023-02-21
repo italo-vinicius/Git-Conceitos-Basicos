@@ -82,4 +82,58 @@ git push -u origin main //envia os arquivos para o repositório
 
 ## Git Ignore
 
-Caso você não queira que algum dado sensivel vá para o repositório remoto, você pode usar o arquivo .gitignore . Nesse arquivo, podemos colocar arquivos que serão ignorados ao darmos o commit
+Caso você não queira que algum dado sensivel vá para o repositório remoto, você pode usar o arquivo ``.gitignore`` . Nesse arquivo, podemos colocar arquivos que serão ignorados ao darmos o commit
+
+Podemos escrever os arquivos que queremos ignorar de algumas formas diferentes. Segue exemplos:
+```
+index.php  //ignora o arquivo index.php em especifico
+*.php  //ignora todos os arquivos php
+Users/ //ignora o diretório Users
+```
+
+***
+
+## Git revert
+
+O grande salvador das sextas-feiras, esse comando pode ser usado para 'dar um commit descommitando' no projeto. Caso você queira voltar um commit por algum motivo, mas sem perder o commit atual, você pode estar utilizando o git revert da seguinte forma:
+
+```
+git revert --no-edit hash_do_commit_desejado 
+```
+
+Ou seja, vai voltar para o commit que foi passado a hash, porem o commit que estava vai permanecer para ser acessado depois
+
+***
+
+## Deletar branchs remotas e locais
+
+Caso queira deletar alguma branch remota, use o comando ``git push origin :namebranch``
+
+E caso queira deletar uma branch local, primeiro saia dela e depois use o comando ``git branch -D nomeBranch``
+
+***
+
+## Pull
+
+O pull serve para receber dados do repositório remoto e trazer para o local, ou seja, manter o sistema local atualizado caso o remoto tenha sofrido alguma alteração. Para fazermos o pull, usamos o comando ``git pull origin namebranch``
+
+O pull tambem trás todas as informações de log
+
+***
+
+## Clone
+
+Com o comando de clone, podemos clonar alguns projetos do github e fazer contribuições. Nesse caso, usaremos o comando ``git clone https://github.com/arquivosfodas``, especificando o link do projeto
+
+***
+
+## Contribuindo com projetos
+
+Para contribuir em projetos, primeiro vamos dar um fork. Após isso, daremos o ``git clone`` no projeto e traremos ele para nossa maquina. A partir dai, podemos fazer qualquer alteração que achamos ser necessária. Após isso, vamos dar um push no projeto
+
+```
+NOTA:
+Caso queira ver o nome do projeto(a grande maioria é 'Origin'), basta usar o comando git remote -v
+```
+
+Após o push, vá ao gitHub e crie um pull request no projeto
