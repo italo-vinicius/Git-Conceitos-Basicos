@@ -36,7 +36,7 @@ git commit -m 'explique seu commit'  //Note que devemos deixar a informação so
 
 Para ver a lista de todos os commits feitos na branch, usamos o comando ``git log``
 
-Caso queira adicionar e fazer o commit de uma só vez, podemos usar o comando ``git commit -ad 'comments'``
+Caso queira adicionar e fazer o commit de uma só vez, podemos usar o comando ``git commit -am 'comments'``
 
 ***
 ## Voltando atrás na história
